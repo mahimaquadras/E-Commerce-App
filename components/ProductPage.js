@@ -6,24 +6,24 @@ const ProductPage = () => {
   const [activeSection, setActiveSection] = useState('men');
 
   const mensShoes = [
-    { id: 1, name: 'Men&rsquo;s Shoe 1', basePrice: 59.99, thumbnailImage: '/images/man1.jpeg' },
-    { id: 2, name: 'Men&rsquo;s Shoe 2', basePrice: 69.99, thumbnailImage: '/images/man2.jpeg' },
-    { id: 3, name: 'Men&rsquo;s Shoe 3', basePrice: 79.99, thumbnailImage: '/images/man3.jpeg' },
-    { id: 4, name: 'Men&rsquo;s Shoe 4', basePrice: 89.99, thumbnailImage: '/images/man4.jpeg' },
-    { id: 5, name: 'Men&rsquo;s Shoe 5', basePrice: 89.99, thumbnailImage: '/images/man5.jpeg' },
+    { id: 1, name: 'Mens Shoe 1', basePrice: 59.99, thumbnailImage: '/images/man1.jpeg' },
+    { id: 2, name: 'Mens Shoe 2', basePrice: 69.99, thumbnailImage: '/images/man2.jpeg' },
+    { id: 3, name: 'Mens Shoe 3', basePrice: 79.99, thumbnailImage: '/images/man3.jpeg' },
+    { id: 4, name: 'Mens Shoe 4', basePrice: 89.99, thumbnailImage: '/images/man4.jpeg' },
+    { id: 5, name: 'Mens Shoe 5', basePrice: 89.99, thumbnailImage: '/images/man5.jpeg' },
   ];
 
   const womensShoes = [
-    { id: 6, name: 'Women&rsquo;s Shoe 1', basePrice: 49.99, thumbnailImage: '/images/woman1.jpg' },
-    { id: 7, name: 'Women&rsquo;s Shoe 2', basePrice: 59.99, thumbnailImage: '/images/woman2.jpg' },
-    { id: 8, name: 'Women&rsquo;s Shoe 3', basePrice: 69.99, thumbnailImage: '/images/woman3.jpeg' },
-    { id: 9, name: 'Women&rsquo;s Shoe 4', basePrice: 69.99, thumbnailImage: '/images/woman4.jpeg' },
+    { id: 6, name: 'Womens Shoe 1', basePrice: 49.99, thumbnailImage: '/images/woman1.jpg' },
+    { id: 7, name: 'Womens Shoe 2', basePrice: 59.99, thumbnailImage: '/images/woman2.jpg' },
+    { id: 8, name: 'Womens Shoe 3', basePrice: 69.99, thumbnailImage: '/images/woman3.jpeg' },
+    { id: 9, name: 'Womens Shoe 4', basePrice: 69.99, thumbnailImage: '/images/woman4.jpeg' },
   ];
 
   const kidsShoes = [
-    { id: 10, name: 'Kids&rsquo; Shoe 1', basePrice: 39.99, thumbnailImage: '/images/kids1.jpeg' },
-    { id: 11, name: 'Kids&rsquo; Shoe 2', basePrice: 29.99, thumbnailImage: '/images/kids2.jpeg' },
-    { id: 12, name: 'Kids&rsquo; Shoe 3', basePrice: 34.99, thumbnailImage: '/images/kids3.jpeg' },
+    { id: 10, name: 'Kids Shoe 1', basePrice: 39.99, thumbnailImage: '/images/kids1.jpeg' },
+    { id: 11, name: 'Kids Shoe 2', basePrice: 29.99, thumbnailImage: '/images/kids2.jpeg' },
+    { id: 12, name: 'Kids Shoe 3', basePrice: 34.99, thumbnailImage: '/images/kids3.jpeg' },
   ];
 
   const getProducts = () => {
