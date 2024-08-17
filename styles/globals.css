@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles/globals.css */
+/* styles/globals.css */
+/* Add global padding and box-sizing */
+/* Add global padding and box-sizing */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 0 16px; /* Adjust as needed */
+}

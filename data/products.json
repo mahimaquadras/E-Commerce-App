@@ -1,0 +1,49 @@
+[
+    {
+      "id": 1,
+      "name": "Men’s Shoe 1",
+      "basePrice": 59.99,
+      "thumbnailImage": "/images/man1.jpeg",
+      "sizes": [
+        { "size": "7", "inStock": true },
+        { "size": "8", "inStock": false },
+        { "size": "9", "inStock": true },
+        { "size": "10", "inStock": true }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Men’s Shoe 2",
+      "basePrice": 69.99,
+      "thumbnailImage": "/images/man2.jpeg",
+      "sizes": [
+        { "size": "7", "inStock": true },
+        { "size": "8", "inStock": true },
+        { "size": "9", "inStock": false },
+        { "size": "10", "inStock": true }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Women’s Shoe 1",
+      "basePrice": 49.99,
+      "thumbnailImage": "/images/woman1.jpg",
+      "sizes": [
+        { "size": "6", "inStock": true },
+        { "size": "7", "inStock": true },
+        { "size": "8", "inStock": false }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Kids’ Shoe 1",
+      "basePrice": 39.99,
+      "thumbnailImage": "/images/kids1.jpeg",
+      "sizes": [
+        { "size": "4", "inStock": true },
+        { "size": "5", "inStock": true },
+        { "size": "6", "inStock": false }
+      ]
+    }
+  ]
+  
