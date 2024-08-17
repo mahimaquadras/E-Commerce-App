@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import { Typography, Grid, Button, Box, IconButton, Dialog, DialogActions, DialogContent, DialogTitle } from '@mui/material';
+import React from 'react';
+import { Typography, Grid, Button, Box, IconButton } from '@mui/material';
 import { useCart } from '../context/CartContext';
 import { RemoveCircleOutline, AddCircleOutline, DeleteForever } from '@mui/icons-material';
 
 const CartPage = () => {
   const { getCartItems, addToCart, removeFromCart } = useCart();
-  const [open, setOpen] = useState(false);
   const cartItems = getCartItems();
 
+  // Function to handle quantity changes
   const handleQuantityChange = (item, amount) => {
     if (item.quantity + amount <= 0) {
       removeFromCart(item.id);
@@ -19,14 +19,11 @@ const CartPage = () => {
   const calculateSubtotal = () =>
     cartItems.reduce((total, item) => total + item.basePrice * item.quantity, 0);
 
-  const handleCheckout = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-    // Redirect to a different page or perform other actions if necessary
-  };
+    const handleCheckout = () => {
+        // Show a simple alert
+        alert('Thank you for placing your order!');
+      };
+      
 
   return (
     <Box p={3}>
@@ -75,17 +72,6 @@ const CartPage = () => {
           <Button variant="contained" color="primary" sx={{ mt: 2 }} onClick={handleCheckout}>
             Checkout
           </Button>
-
-          {/* Checkout Confirmation Modal */}
-          <Dialog open={open} onClose={handleClose}>
-            <DialogTitle>Order Confirmation</DialogTitle>
-            <DialogContent>
-              <Typography variant="h6">Thank you for placing your order!</Typography>
-            </DialogContent>
-            <DialogActions>
-              <Button onClick={handleClose} color="primary">Close</Button>
-            </DialogActions>
-          </Dialog>
         </>
       )}
     </Box>
